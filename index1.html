@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiện ích</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="headerBar">
+            <div><a href="index.html"><img src="images/Logo.png"></a></div>
+            <div class="menuButton" id="menuButton">
+                <button class="openButton" id="openButton" onclick="toggleSidebar()">&#9776</button>
+            </div>
+        </div>
+        <div class="sideBar" id="sideBar">
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="#" id="a" onclick="togglesubSideBar1()">&#9656;Chức Năng</a></li>
+                <ul class="subSideBar" id="subSideBar1">
+                    <li><a href="index1.html">Đăng ký học phần</a></li>
+                    <li><a href="index2.html">Xem điểm</a></li>
+                </ul>
+                <li><a href="#" id="b" onclick="togglesubSideBar2()">&#9656;Tài Khoản</a></li>
+                <ul class="subSideBar" id="subSideBar2">
+                    <li><a href="#">Thông tin</a></li>
+                    <li><a href="#">Đăng nhập</a></li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+    <main onclick="closeSidebar()">
+        <section class="sticky">
+            <div class="bubbles">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="title">
+                <h3>ĐĂNG KÝ HỌC PHẦN</h3>
+            </div>
+            <div>
+                <p>NĂM HỌC 2023-2024 - HỌC KỲ 3</p>
+            </div>
+            <div class="flex fill">
+                <select class="selectionBox">
+                    <option value="">Đăng ký theo lớp sinh viên</option>
+                    <option value="">Đăng ký theo kế hoạch</option>
+                    <option value="">Đăng ký ngoài kế hoạch</option>
+                    <option value="">Đăng ký học vượt</option>
+                    <option value="">Các môn học lại</option>
+                </select>
+                <div class="search">
+                    <input type="text" placeholder="Nhập thông tin môn học ..">
+                    <button type="submit"><i class="fa fa-search"> Tìm kiếm</i></button>
+                </div>
+            </div>
+            <div class="table">
+                <fieldset>
+                    <legend>Đăng ký theo lớp sinh viên</legend>
+                <table id="return">
+                    <tr>
+                        <th></th>
+                        <th>Mã MH</th>
+                        <th>Tên môn học</th>
+                        <th>Số TC</th>
+                        <th>Lớp</th>
+                        <th>Số lượng</th>
+                        <th>Thời khóa biểu</th>
+                    </tr>
+                    <tr>
+                        <td> <button class="select-button pointedCursor">Chọn</button></td>
+                        <td>MATH1313</td>
+                        <td>Đại số tuyến tính</td>
+                        <td>3</td>
+                        <td>IT2302</td>
+                        <td>0</td>
+                        <td>Thứ 7,từ 12:45 đến 17:10,Ph NB.B103,GV GV743,22/06/24 đến 17/08/24</td>
+                    </tr>
+                    <tr>
+                        <td> <button class="select-button pointedCursor">Chọn</button></td>
+                        <td>ITEC1406</td>
+                        <td>Thiết kế Web</td>
+                        <td>3</td>
+                        <td>IT2303</td>
+                        <td>0</td>
+                        <td>
+                            Thứ 4,từ 07:00 đến 11:25,Ph NB.B10 4,GV TH100,19/06/24 đến 24/07/24 
+                            <br/>Thứ 4,từ 12:45 đến 17:10,Ph NB.PMA408,GV TH100,03/07/24 đến 11/09/24 (TH)
+                        </td>      
+                    </tr>
+                    <tr>
+                        <td> <button class="select-button pointedCursor">Chọn</button></td>
+                        <td>MISY2501</td>
+                        <td>Cấu trúc dữ liệu và giải thuật</td>
+                        <td>3</td>
+                        <td>IT2302</td>
+                        <td>0</td>
+                        <td>
+                            Thứ 2,từ 12:45 đến 17:10,Ph NB.B10 4,GV TH100,19/06/24 đến 24/07/24 
+                            <br/>Thứ 2,từ 07:00 đến 11:25,Ph NB.PMA407,GV TH193,03/07/24 đến 11/09/24 (TH)
+                        </td>      
+                    </tr>
+                    <tr>
+                        <td> <button class="select-button pointedCursor">Chọn</button></td>
+                        <td>ITEC2503</td>
+                        <td>Mạng máy tính (Nhập môn MMT)</td>
+                        <td>3</td>
+                        <td>IT2303</td>
+                        <td>0</td>
+                        <td>Thứ 6,từ 12:45 đến 17:10,Ph A.211,13/11/24 đến 11/12/24
+                            <br/>Thứ 6,từ 07:00 đến 11:25,Ph NB.PMA407,GV TH193,03/07/24 đến 11/09/24 (TH)
+                        </td>      
+                    </tr>
+                    <tr>
+                        <td> <button class="select-button pointedCursor">Chọn</button></td>
+                        <td>GENG1314</td>
+                        <td>Tiếng Anh nâng cao 4</td>
+                        <td>2</td>
+                        <td>_DBTANC4</td>
+                        <td>0</td>
+                        <td>Thứ 3,từ 12:45 đến 17:10,Ph A.216,12/11/24 đến 10/12/24
+                            <br/>Thứ 5,từ 12:45 đến 17:10,Ph A.216,14/11/24 đến 12/12/24</td>      
+                    </tr>
+                    <tr>
+                        <td> <button class="select-button pointedCursor">Chọn</button></td>
+                        <td>GENG1315</td>
+                        <td>Tiếng Anh nâng cao 5</td>
+                        <td>2</td>
+                        <td>_DBTANC5</td>
+                        <td>0</td>
+                        <td>Thứ 4,từ 12:45 đến 17:10,Ph A.211,13/11/24 đến 11/12/24
+                            <br/>Thứ 7,từ 12:45 đến 17:10,Ph A.211,16/11/24 đến 14/12/24</td>      
+                    </tr>
+                </table>
+                </fieldset>
+            </div>
+            <div class="table">
+                <fieldset>
+                    <legend class="result">Kết quả đăng ký: 0 môn, 0 tín chỉ</legend>
+                    <table id="selected">
+                        <tr>
+                            <th></th>
+                            <th>Mã MH</th>
+                            <th>Tên môn học</th>
+                            <th>Số TC</th>
+                            <th>Lớp</th>
+                            <th>Số lượng</th>
+                            <th>Thời khóa biểu</th>
+                        </tr>
+                    </table>
+                    <div class="button-container">
+                        <button class="pointedCursor" id="registerButton">ĐĂNG KÝ</button>
+                    </div>
+            </fieldset>
+        <script src="header.js"></script>
+        <script src="script1.js"></script>
+    </main>
+    <footer>
+        <div class="info">
+            <h2><b>Cao Văn Trường Vũ</b></h2>
+            <h3>OuID: 2351050201</h3>
+            <h3>contact: 0377 489 454</h3>
+            <h3>email: 2351050201vu@ou.edu.vn</h3>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,234 @@
+html, body {
+    margin: 29px 0px 0px 0px;
+    padding: 0;
+    font-size: 1vw;
+    font-family: "Gill Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.pointedCursor {
+  cursor: pointer;
+}
+
+.headerBar {
+    display: flex;
+    background-color: #2f3c7e;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    position: fixed;
+}
+
+.headerBar > div img {
+    width: 300px;
+    height: auto;
+}
+
+.headerBar > div:last-child {
+    margin-left: auto;
+}
+
+.menuButton {
+    padding: 5px;
+}
+
+.openButton {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #2f3c7e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 9px;
+    transition: background-color 0.3s;
+}
+
+.openButton:hover {
+    background-color: #0d3160;
+}
+
+.sideBar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    right: 0;
+    z-index: 3;
+    background-color: #2f3c7e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.sideBar>ul {
+    background-color: #2f3c7e;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: large;
+}
+
+.sideBar>ul>li>a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-indent: 10px;
+}
+
+.sideBar>ul>li:hover {
+    background-color: #4d7dbc;
+    transition: background-color 0.2s;
+}
+
+/*sub-sidebar*/
+
+.subSideBar {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #0d3160;
+}
+
+.subSideBar > li > a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-indent: 30px;
+}
+
+.subSideBar>li:hover {
+    background-color: #4d7dbc;
+    transition: background-color 0.3s;
+}
+
+/*bubble effect background*/
+
+main {
+    position: relative;
+    z-index: 1;
+    background: #29b6f6;
+}
+
+.bubbles{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index:0;
+    overflow:hidden;
+}
+  .bubble{
+    position: absolute;
+    bottom:-100px;
+    width:40px;
+    height: 40px;
+    background:#f1f1f1;
+    border-radius:50%;
+    opacity:0.5;
+    animation: rise 10s infinite ease-in;
+
+    z-index: 0;
+}
+  .bubble:nth-child(1){
+    width:40px;
+    height:40px;
+    left:6%;
+    animation-duration:6s;
+}
+  .bubble:nth-child(2){
+    width:20px;
+    height:20px;
+    left:5%;
+    animation-duration:4s;
+    animation-delay:1s;
+}
+  .bubble:nth-child(3){
+    width:50px;
+    height:50px;
+    left:95%;
+    animation-duration:6s;
+    animation-delay:2s;
+}
+  .bubble:nth-child(4){
+    width:80px;
+    height:80px;
+    left:90%;
+    animation-duration:8s;
+    animation-delay:0s;
+}
+  .bubble:nth-child(5){
+    width:35px;
+    height:35px;
+    left:3%;
+    animation-duration:5s;
+    animation-delay:1s;
+}
+  .bubble:nth-child(6){
+    width:45px;
+    height:45px;
+    left:87%;
+    animation-duration:5s;
+    animation-delay:3s;
+}
+  .bubble:nth-child(7){
+    width:90px;
+    height:90px;
+    left:86%;
+    animation-duration:7s;
+    animation-delay:2s;
+}
+  .bubble:nth-child(8){
+    width:25px;
+    height:25px;
+    left:83%;
+    animation-duration:4s;
+    animation-delay:2s;
+}
+  .bubble:nth-child(9){
+    width:20px;
+    height:20px;
+    left:3%;
+    animation-duration:3s;
+    animation-delay:1s;
+}
+  .bubble:nth-child(10){
+    width:90px;
+    height:90px;
+    left:2%;
+    animation-duration:8s;
+    animation-delay:4s;
+}
+  @keyframes rise{
+    0%{
+      bottom:-100px;
+      transform:translateX(0);
+    }
+    50%{
+      transform:translate(100px);
+    }
+    100%{
+      bottom:1080px;
+      transform:translateX(-200px);
+    }
+}
+/*footer*/
+footer {
+    position: relative;
+    background-color: #2f3c7e;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.info h2 {
+    margin: 0;
+}
+.info h3 {
+    margin: 0;
+}

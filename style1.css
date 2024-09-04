@@ -1,0 +1,99 @@
+/*main content*/
+.container {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(112, 113, 113);
+    position: relative;
+    padding: 0;
+}
+
+.title {
+    width: 20%;
+    background-color: dodgerblue;
+    color: white;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0), 0 0 4px white;
+    text-align: center;
+}
+
+div p {
+  color: #2f3c7e;
+  font-weight: bold;
+  font-size: large;
+}
+
+.fill {
+  margin: 10px;
+}
+
+.selectionBox {
+  padding: 0.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+  flex: 1;
+}
+
+
+.search input {
+  border-radius: 10px;
+  border-width: 0.1px;
+  padding: 10px;
+}
+
+.search button {
+  border-radius: 15px;
+  background-color: #2f3c7e;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color:#0d3160;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+.table tr th {
+  background-color: #2f3c7e;
+  color: white;
+  border-color: black;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+}
+
+table tr:hover {
+  background-color: darkgray;
+}
+
+div legend {
+  color: #2f3c7e;
+  font-weight: bold;
+  font-size: large;
+}
+
+.button-container > button {
+  font-size: large;
+  background-color:rgb(210, 37, 37);
+  color: white;
+  border-radius: 10px;
+  
+}
+
+.button-container > button:hover {
+  background-color: rgb(142, 24, 24);
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}

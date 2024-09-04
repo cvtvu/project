@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiện ích</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+</head>
+<body>
+    <header>
+        <div class="headerBar">
+            <div><a href="index.html"><img src="images/Logo.png"></a></div>
+            <div class="menuButton" id="menuButton">
+                <button class="openButton" id="openButton" onclick="toggleSidebar()">&#9776</button>
+            </div>
+        </div>
+        <div class="sideBar" id="sideBar">
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="#" id="a" onclick="togglesubSideBar1()">&#9656;Chức Năng</a></li>
+                <ul class="subSideBar" id="subSideBar1">
+                    <li><a href="index1.html">Đăng ký học phần</a></li>
+                    <li><a href="index2.html">Xem điểm</a></li>
+                </ul>
+                <li><a href="#" id="b" onclick="togglesubSideBar2()">&#9656;Tài Khoản</a></li>
+                <ul class="subSideBar" id="subSideBar2">
+                    <li><a href="#">Thông tin</a></li>
+                    <li><a href="#">Đăng nhập</a></li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+    <main onclick="closeSidebar()">
+        <section class="sticky">
+            <div class="bubbles">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+        </section>
+        <div class="container flex">
+            <div class="left">
+                <div class="content html">  
+                    <a href="https://vi.wikipedia.org/wiki/HTML" target="_blank">
+                        <img src="images/html-5.png" alt="HTML">
+                        <div>
+                            <h1>HTML</h1>
+                            <h3>Standard markup language</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="content css">
+                    <a href="https://vi.wikipedia.org/wiki/CSS" target="_blank">
+                        <img src="images/CSS-3.png" alt="CSS">
+                        <div>
+                            <h1>CSS</h1>
+                            <h3>Style sheet language</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="information">
+                    <a href="https://www.facebook.com/profile.php?id=100015001635292" target="_blank">
+                        <h2>Sinh viên: Cao Văn Trường Vũ</h2>
+                        <h2>Môn học: Thiết kế web</h2>
+                        <img src="images/dog.jpg">
+                    </a>    
+                </div>
+            </div>
+            <div class="right">
+                <div class="content js">
+                    <a href="https://vi.wikipedia.org/wiki/JavaScript" target="_blank">
+                        <img src="images/java-script.png" alt="JavaScript">
+                        <div>
+                            <h1>JAVASCRIPT</h1>
+                            <h3>Programming language</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="content jquery">
+                    <a href="https://vi.wikipedia.org/wiki/JQuery" target="_blank">
+                        <img src="images/jquery (1).png" alt="Jquery">
+                        <div>
+                            <h1>JQUERY</h1>
+                            <h3>JavaScript library</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="information">
+                    <a href="https://duonghuuthanh.github.io/dhthanh/" target="_blank">
+                        <h2>Giảng viên: Dương Hữu Thành</h2>
+                        <h2>Môn học: Thiết kế web</h2>
+                        <img src="images/thay.jpg">
+                    </a>    
+                </div>
+            </div>
+        </div>
+        <script src="header.js"></script>
+    </main>
+    <footer>
+        <div class="info">
+            <h2><b>Cao Văn Trường Vũ</b></h2>
+            <h3>OuID: 2351050201</h3>
+            <h3>contact: 0377 489 454</h3>
+            <h3>email: 2351050201vu@ou.edu.vn</h3>
+        </div>
+    </footer>
+</body>
+</html>
+
